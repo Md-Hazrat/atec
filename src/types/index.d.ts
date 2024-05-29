@@ -100,4 +100,11 @@ export interface EventContactType {
   designation: string;
   phone: 0;
   img: string;
+};
+
+export interface DashboardType {
+  title: string;
+  price: string;
+  description: string;
+  icon: React.ReactNode;
 }
