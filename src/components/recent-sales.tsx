@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function RecentSales() {
   return (
-    <div className="container space-y-8 shadow-2xl mt-3">
+    <div className="container space-y-8 shadow-2xl dark:border">
       <div>
         <h1 className="font-bold">Recent Sales</h1>
         <p>You made 265 sales this month.</p>

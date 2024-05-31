@@ -8,9 +8,9 @@ import { RecentSales } from "@/components/recent-sales";
 export function DashboardPage() {
   return (
     <main className="container mx-auto p-4">
-      <div className="flex flex-wrap text-center">
+      <div className="flex flex-wrap">
         {dashboard?.map((item: DashboardType, index: any) => (
-          <div key={index} className="w-full md:w-1/4 lg:w-1/4 p-2">
+          <div key={index} className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 p-2">
             <DashboardCard
               title={item.title}
               price={item.price}
@@ -21,11 +21,11 @@ export function DashboardPage() {
         ))}
       </div>
 
-      <div className="md:flex lg:flex">
-        <div className="w-full p-3 shadow-2xl">
+      <div className="md:flex lg:flex gap-4">
+        <div className="w-full shadow-2xl mt-3">
           <Overview />
         </div>
-        <div className="w-full p-2">
+        <div className="w-full shadow-2xl mt-3">
           <RecentSales />
         </div>
       </div>
