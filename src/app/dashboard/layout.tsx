@@ -31,6 +31,7 @@ export default async function AdminLayout({
         <AdminHeader />
         <AdminPageWrapper>{children}</AdminPageWrapper>
       </div>
+      <Footer />
     </div>
   );
 }
